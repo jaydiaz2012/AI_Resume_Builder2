@@ -140,7 +140,7 @@ class ResumeBuilderApp:
         return buffer
 
     def run(self):
-        st.title("Advanced Resume Builder")
+        st.title("Your Resume Builder")
         
         personal_info = self.personal_info_section()
         education_history = self.education_section()
