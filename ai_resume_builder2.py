@@ -120,12 +120,14 @@ class ResumeBuilderApp:
             with st.expander(f"Reference {i+1}"):
                 name = st.text_input(f"Reference Name {i+1}")
                 company = st.text_input(f"Reference Company {i+1}")
+                company_address = st.text_input(f"Reference Address {i+1}")
                 phone = st.text_input(f"Reference Phone {i+1}")
                 email = st.text_input(f"Reference Email {i+1}")
                 
                 references.append({
                     'name': name,
                     'company': company,
+                    'company_address': company_address,
                     'phone': phone,
                     'email': email
                 })
