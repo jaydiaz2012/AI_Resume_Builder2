@@ -50,11 +50,13 @@ class ResumeBuilderApp:
         for i in range(num_edu):
             with st.expander(f"Education Entry {i+1}"):
                 institution = st.text_input(f"Institution Name {i+1}")
+                institution_address = st.text_input(f"Institution Address {i+1}")
                 degree = st.text_input(f"Degree/Qualification {i+1}")
                 graduation_year = st.text_input(f"Graduation Year {i+1}")
                 
                 education_entries.append({
                     'institution': institution,
+                    'institution_address': institution_address,
                     'degree': degree,
                     'graduation_year': graduation_year
                 })
